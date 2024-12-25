@@ -1,0 +1,298 @@
+body {
+  background-color: #FFF6CB;
+  font-family: "Noto Sans JP", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  margin-inline: auto;
+}
+
+section {
+  width: 100%;
+}
+
+.section-inner {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+/* ###### 見出し ###### */
+
+.title-h2 {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  padding: 0 65px;
+}
+
+.title-h2:before,
+.title-h2:after {
+  position: absolute;
+  top: calc(50% - 3px);
+  width: 50px;
+  height: 6px;
+  content: '';
+  border-top: 2px dotted #EC9440;
+  border-bottom: 2px dotted #EC9440;
+}
+
+.title-h2:before {
+  left: 0;
+}
+
+.title-h2:after {
+  right: 0;
+}
+
+.h2-box {
+  display: flex;
+  justify-content: center;
+}
+
+/* ###### ヘッダー ###### */
+.header-logo-h1 {
+  font-size: 1.6em;
+}
+
+.header-content {
+  max-width: 1020px;
+  display: flex;
+  margin: 0 auto;
+  height: 70px;
+} 
+
+.header-logobox {
+  display: flex;
+  margin-right: auto;
+}
+
+.header-logo-title {
+  padding-top: 5px;
+  margin-left: 10px;
+  letter-spacing: .5em;
+}
+
+.header-logo-title span {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: .8em;
+  letter-spacing: .5em;
+  margin-left: 10px;
+}
+
+.g-nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.g-nav-ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.g-nav-li {
+  list-style: none;
+  margin: auto 20px;
+}
+
+.g-nav-li a {
+
+}
+
+.g-nav-btn {
+  background-color: #3B771F;
+  border: solid 2px #3B771F;
+  color: #fff;
+  padding: 5px 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: .9em;
+  transition: all .3s ease 0s;
+}
+
+.g-nav-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ###### mv ###### */
+
+/* ###### お弁当メニュー ###### */
+#menu {
+  background-color: #FFF6CB;
+}
+
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-box {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 260px;
+  width: calc(25% - 15px);
+  padding: 20px;
+  position: relative;
+}
+
+.menu-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-cat {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  height: 3em;
+  width: 3em;
+  text-align: center;
+  font-size: 1em;
+  line-height: 3em;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+}
+
+.cat-j {
+  background-color: #3B771F;
+}
+
+.cat-c {
+  background-color: #EC9440;
+}
+
+.cat-e {
+  background-color: #94CD7A;
+}
+
+/* ###### ご利用ガイド ###### */
+#service {
+  background-color: lightyellow;
+}
+
+.service-content {
+  display: flex;
+  gap: 40px;
+}
+
+.service-box {
+  text-align: center;
+  width: calc(33% - 26px);
+  border-radius: 10px;
+  padding: 40px 40px;
+  background-color: #fff;
+}
+
+.service-h3 {
+  border-bottom: 3px dotted #EC9440;
+  margin: 20px 0;
+  padding-bottom: 5px;
+}
+
+.service-box img {
+  width: 20%;
+}
+
+.service-ul {
+  text-align: left;
+}
+
+.service-li {
+  font-size: .9em;
+  padding-bottom: 10px;
+  list-style-type: square;
+}
+
+/* ###### よくある質問 ###### */
+#question {
+
+}
+
+.qa-list dt {
+  margin-bottom: 1em;
+  color: #333333;
+  font-weight: 600;
+}
+
+.qa-list dt::before,
+.qa-list dd::before {
+  margin-right: .4em;
+}
+
+.qa-list dt::before {
+  content: "Q.";
+}
+
+.qa-list dd {
+  margin: 0 0 2.5em;
+  padding: 1em 1.5em;
+  background-color: #fff;
+  color: #333333;
+}
+
+.qa-list dd::before {
+  content: "A.";
+}
+
+/* ###### フッター ###### */
+.footer-content {
+  background-color: #3B771F;
+  color:#fff;
+  margin-bottom: 0;
+}
+
+.footer-box {
+  display: block;
+  padding: 80px 0;
+  margin: 20px auto;
+  max-width: 1020px;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-li {
+  border-right: 1px solid #DDD;
+  padding: 0 40px;
+  margin:0;
+}
+
+.footer-li-last {
+  border-right: none;
+}
+
+.footer-li a {
+  font-size: .9em;
+  color:#fff;
+}
+
+.copy-right {
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+  font-size: .6em;
+}
